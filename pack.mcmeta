@@ -1,0 +1,19 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "description": [
+            {
+                "text": "【 hehe-Minigame 】",
+                "color": "white"
+            },
+            {
+                "text": "\nHide-n-seek ",
+                "color": "yellow"
+            },
+            {
+                "text": "MC 1.21",
+                "color": "gray"
+            }
+        ]
+    }
+}
