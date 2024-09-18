@@ -9,8 +9,11 @@ effect clear @a[team=sweeper] wither
 
 execute as @a[scores={hns_atk=1..}] at @s run function hns:atk/atk
 execute as @a[scores={hns_summon=1..}] at @s run function hns:bug_skill/summon_trash/summon
+execute as @a[scores={hns_sticker_use=1..}] at @s run function hns:sweeper_skill/summon_sticker/summon
 
 execute unless score #game_status hns matches 0 unless score @s hns_round = #game_round hns run function hns:player/rejoin
+
+execute as @e[type=interaction,tag=hns_sticker] at @s run function hns:sweeper_skill/sticker/tick
 
 execute if score #game_status hns matches 1 run function hns:game/tick_1
 execute if score #game_status hns matches 2 run function hns:game/tick_2
@@ -29,5 +32,5 @@ execute as @a[team=sweeper] run item replace entity @s armor.head with warped_bu
 ],hide_tooltip={},enchantments={binding_curse:1}]
 execute as @a[team=spec] run item replace entity @s armor.head with air
 
-execute as @a[team=bug] run item replace entity @s armor.chest with elytra[unbreakable={},enchantments={binding_curse:1}]
+execute as @a[team=bug] run item replace entity @s armor.chest with elytra[unbreakable={},enchantments={binding_curse:1},hide_tooltip={}]
 execute as @a[team=!bug] run item replace entity @s armor.chest with air

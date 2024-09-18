@@ -10,6 +10,7 @@ clear @a
 execute as @a[team=bug] run function hns:player/reset_xp
 
 function hns:edit/reset_all_trash_and_food
+function hns:edit/remove_all_stickers
 
 tellraw @a [{"text":"> 游戏已重置"}]
 

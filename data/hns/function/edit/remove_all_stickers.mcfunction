@@ -1,0 +1,1 @@
+execute as @e[type=interaction,tag=hns_sticker] at @s run function hns:sweeper_skill/summon_sticker/remove_sticker

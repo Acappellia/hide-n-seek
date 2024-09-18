@@ -11,6 +11,7 @@ gamerule doInsomnia false
 gamerule doTraderSpawning false
 gamerule doPatrolSpawning false
 
+gamerule showDeathMessages false
 gamerule announceAdvancements false
 gamerule spawnRadius 0
 
@@ -29,6 +30,10 @@ scoreboard objectives add hns_atk_cd custom:time_since_death
 
 scoreboard objectives add hns_summon used:warped_fungus_on_a_stick
 scoreboard objectives add hns_summon_cd custom:time_since_death
+
+scoreboard objectives add hns_sticker_use used:ender_eye
+
+scoreboard objectives add hns_sticker_time custom:time_since_death
 
 scoreboard objectives add hns_firework_cd dummy
 scoreboard objectives add hns_pesticide_cd dummy
