@@ -31,6 +31,7 @@ scoreboard objectives add hns_summon used:warped_fungus_on_a_stick
 scoreboard objectives add hns_summon_cd custom:time_since_death
 
 scoreboard objectives add hms_firework_cd dummy
+scoreboard objectives add hms_pesticide_cd dummy
 
 scoreboard objectives add hns_entity_health dummy
 
