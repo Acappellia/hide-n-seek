@@ -21,5 +21,6 @@ playsound block.grass.break block @a ~ ~ ~ 1 0.8
 particle poof ~ ~0.5 ~ 0.2 0.2 0.2 0 10
 execute on passengers on passengers run data modify entity @s text set value '""'
 execute on passengers run data remove entity @s item
+tag @s add trash_dead
 
 execute if entity @s[tag=hns_trash_tmp] run function hns:atk/trash_hit_kill

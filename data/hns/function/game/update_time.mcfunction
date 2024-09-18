@@ -1,0 +1,2 @@
+$execute if score #time_sec hns matches 10.. run bossbar set game_cd name [{"text": "剩余时间","color": "white"},{"text": " - ","color": "gray"},{"text": "$(min)","color": "white"},{"text": ":","color": "gray"},{"text": "$(sec)","color": "white"}]
+$execute if score #time_sec hns matches ..9 run bossbar set game_cd name [{"text": "剩余时间","color": "white"},{"text": " - ","color": "gray"},{"text": "$(min)","color": "white"},{"text": ":","color": "gray"},{"text": "0","color": "white"},{"text": "$(sec)","color": "white"}]

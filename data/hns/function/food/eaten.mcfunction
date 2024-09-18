@@ -18,3 +18,4 @@ playsound entity.player.burp block @a ~ ~ ~ 1 0.9
 particle poof ~ ~0.5 ~ 0.2 0.2 0.2 0 10
 execute on passengers on passengers run data modify entity @s text set value '""'
 execute on passengers run data remove entity @s item
+tag @s add food_dead
