@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "use_eye": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "ender_eye"
+                },
+                "player": {
+                    "team": "sweeper"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hns:sweeper_skill/summon_sticker/summon"
+    }
+}

@@ -20,7 +20,7 @@ time set 6000
 gamerule doWeatherCycle false
 weather clear
 
-difficulty peaceful
+difficulty easy
 
 scoreboard objectives add hns dummy
 scoreboard objectives add hns_round dummy
@@ -31,7 +31,7 @@ scoreboard objectives add hns_atk_cd custom:time_since_death
 scoreboard objectives add hns_summon used:warped_fungus_on_a_stick
 scoreboard objectives add hns_summon_cd custom:time_since_death
 
-scoreboard objectives add hns_sticker_use used:ender_eye
+scoreboard objectives add hns_sticker_usecd custom:time_since_death
 
 scoreboard objectives add hns_sticker_time custom:time_since_death
 

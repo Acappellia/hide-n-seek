@@ -1,1 +1,1 @@
-execute as @a[team=bug,distance=..1.5] run function hns:sweeper_skill/sticker/effect
+execute as @a[team=bug,distance=..2] run function hns:sweeper_skill/sticker/effect

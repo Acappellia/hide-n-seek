@@ -9,7 +9,9 @@ effect clear @a[team=sweeper] wither
 
 execute as @a[scores={hns_atk=1..}] at @s run function hns:atk/atk
 execute as @a[scores={hns_summon=1..}] at @s run function hns:bug_skill/summon_trash/summon
-execute as @a[scores={hns_sticker_use=1..}] at @s run function hns:sweeper_skill/summon_sticker/summon
+#execute as @a[scores={hns_sticker_use=1..}] at @s run function hns:sweeper_skill/summon_sticker/summon
+execute as @a[scores={hns_sticker_time=1..}] run attribute @s generic.jump_strength modifier remove sticker
+execute as @e[type=zombie,tag=hns_robot] at @s run function hns:sweeper_skill/robot_tick
 
 execute unless score #game_status hns matches 0 unless score @s hns_round = #game_round hns run function hns:player/rejoin
 
