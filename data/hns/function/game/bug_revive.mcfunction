@@ -44,4 +44,4 @@ execute store result score #has_firework hns run clear @s firework_rocket 0
 execute if score #has_firework hns matches 1.. run return -1
 
 give @s firework_rocket 1
-scoreboard players set @s hms_firework_cd -200
+scoreboard players set @s hns_firework_cd -200
