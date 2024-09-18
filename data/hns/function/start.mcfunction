@@ -8,8 +8,10 @@ execute as @a[team=bug] run function hns:player/init_item_bug
 execute as @a[team=sweeper] run function hns:player/init_item_sweeper
 execute as @a[team=bug] run function hns:player/reset_xp
 
+effect clear @a
 effect give @a instant_health 1 9 true
 effect give @a[team=sweeper] resistance infinite 9 true
+effect give @a[team=bug] resistance 10 9 true
 scoreboard players set @a hns_firework_cd -200
 scoreboard players set @a hns_pesticide_cd -400
 
