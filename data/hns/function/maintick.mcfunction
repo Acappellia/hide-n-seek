@@ -22,8 +22,12 @@ execute as @a[team=bug] run item replace entity @s armor.head with warped_button
 {amount:-0.5,id:"bug_gravity",type:"generic.gravity",operation:"add_multiplied_base",slot:"head"},\
 {amount:-0.3,id:"bug_jump",type:"generic.jump_strength",operation:"add_multiplied_base",slot:"head"},\
 {amount:-0.7,id:"bug_interact_entity",type:"player.entity_interaction_range",operation:"add_multiplied_base",slot:"head"},\
+{amount:-1,id:"bug_interact_block",type:"player.block_interaction_range",operation:"add_multiplied_base",slot:"head"},\
 ],hide_tooltip={},enchantments={binding_curse:1}]
 execute as @a[team=sweeper] run item replace entity @s armor.head with warped_button[attribute_modifiers=[\
 {amount:1,id:"bug_scale",type:"generic.knockback_resistance",operation:"add_value",slot:"head"},\
 ],hide_tooltip={},enchantments={binding_curse:1}]
 execute as @a[team=spec] run item replace entity @s armor.head with air
+
+execute as @a[team=bug] run item replace entity @s armor.chest with elytra[unbreakable={},enchantments={binding_curse:1}]
+execute as @a[team=!bug] run item replace entity @s armor.chest with air

@@ -39,3 +39,9 @@ gamemode adventure
 execute at @s run particle ash ~ ~0.5 ~ 0.3 0.3 0.3 0 20
 title @s actionbar "已复活"
 effect give @s resistance 3 9 true
+
+execute store result score #has_firework hns run clear @s firework_rocket 0
+execute if score #has_firework hns matches 1.. run return -1
+
+give @s firework_rocket 1
+scoreboard players set @s hms_firework_cd -200
