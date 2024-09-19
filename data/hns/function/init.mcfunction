@@ -15,6 +15,8 @@ gamerule showDeathMessages false
 gamerule announceAdvancements false
 gamerule spawnRadius 0
 
+gamerule fallDamage false
+
 gamerule doDaylightCycle false
 time set 6000
 gamerule doWeatherCycle false

@@ -14,6 +14,7 @@ execute as @a[scores={hns_sticker_time=1..}] run attribute @s generic.jump_stren
 execute as @e[type=zombie,tag=hns_robot] at @s run function hns:sweeper_skill/robot_tick
 
 execute as @a[team=bug] if predicate hns:is_sneaking at @s run function hns:bug_skill/sneak/check_eat
+execute as @a[team=bug] unless predicate hns:is_sneaking run effect clear @s levitation
 
 execute unless score #game_status hns matches 0 unless score @s hns_round = #game_round hns run function hns:player/rejoin
 
