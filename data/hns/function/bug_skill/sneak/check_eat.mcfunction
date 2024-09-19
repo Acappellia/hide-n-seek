@@ -1,0 +1,1 @@
+execute if entity @e[distance=..1,type=interaction,tag=hns_food] run function hns:bug_skill/sneak/eat

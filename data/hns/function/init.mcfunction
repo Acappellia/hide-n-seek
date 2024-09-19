@@ -25,11 +25,15 @@ difficulty easy
 scoreboard objectives add hns dummy
 scoreboard objectives add hns_round dummy
 
+scoreboard objectives add hns_food_type dummy
+
 scoreboard objectives add hns_atk used:carrot_on_a_stick
 scoreboard objectives add hns_atk_cd custom:time_since_death
 
 scoreboard objectives add hns_summon used:warped_fungus_on_a_stick
 scoreboard objectives add hns_summon_cd custom:time_since_death
+
+scoreboard objectives add hns_eat_cd custom:time_since_death
 
 scoreboard objectives add hns_sticker_usecd custom:time_since_death
 
@@ -75,7 +79,7 @@ bossbar set game_cd style progress
 #bossbar set game_cd visible false
 
 
-schedule function hns:slowtick 12t append
+#schedule function hns:slowtick 12t append
 schedule function hns:sec_tick 20t append
 
 execute unless score #game_status hns = #game_status hns run scoreboard players set #game_status hns 0
