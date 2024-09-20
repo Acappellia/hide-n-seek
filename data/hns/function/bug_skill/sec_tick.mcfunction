@@ -1,0 +1,1 @@
+execute as @e[type=item_display,distance=..1,tag=nw_display] run function hns:shake/1
