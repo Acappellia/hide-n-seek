@@ -1,4 +1,4 @@
-execute align xz positioned ~0.5 ~ ~0.5 run summon interaction ~ ~ ~ {Tags:["hns_food","new","hns_food_basket"],width:0,height:0,Passengers:[{id:item_display,transformation:[-2,0,0,0,0,2,0,1,0,0,-2,0,0,0,0,2],item:{id:"firework_star",components:{custom_model_data:4}},Passengers:[{id:"text_display","text":'[{"text": "■■■■■■■■■■","color": "green"},{"text": "","color": "red"}]',background:0,line_width:1000,view_range:0.2,billboard:"vertical",transformation:[1,0,0,0,0,1,0,1,0,0,1,0,0,0,0,1]}]}]}
+execute align xz positioned ~0.5 ~ ~0.5 run summon interaction ~ ~ ~ {Tags:["hns_food","new","hns_food_basket"],width:0,height:0,Passengers:[{id:item_display,transformation:[-2,0,0,0,0,2,0,1,0,0,-2,0,0,0,0,2],item:{id:"firework_star",components:{custom_model_data:4}},Passengers:[{id:"text_display","text":'[{"text": "∎∎∎∎∎∎∎∎∎∎","color": "green"},{"text": "","color": "red"}]',background:0,line_width:1000,view_range:0.2,billboard:"vertical",transformation:[1,0,0,0,0,1,0,1,0,0,1,0,0,0,0,1]}]}]}
 
 execute store result score @n[type=interaction,tag=new,distance=..10] hns_food_type run random value 10099..10106
 
