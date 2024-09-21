@@ -3,4 +3,4 @@ data merge entity @s {interpolation_duration:1,start_interpolation:-1,transforma
 tag @s add shake_s1
 schedule function hns:shake/2 2t replace
 playsound minecraft:item.armor.equip_generic block @a ~ ~0.5 ~ 1 1
-particle crit ~ ~0.5 ~ 0 0 0 0.2 10
+execute at @s run particle crit ~ ~0.5 ~ 0 0 0 0.2 10
