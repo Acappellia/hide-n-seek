@@ -52,6 +52,10 @@ scoreboard objectives add hns_level dummy
 scoreboard objectives add hns_bug_death custom:time_since_death
 scoreboard objectives add hns_bug_revive_cd custom:time_since_death
 
+#todo worldborder
+worldborder center 0 0
+worldborder set 10000
+
 team add sweeper
 team modify sweeper collisionRule never
 team modify sweeper color aqua
