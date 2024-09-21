@@ -1,7 +1,7 @@
 execute as @e[type=interaction,tag=hns_trash_tmp] run function hns:atk/trash_hit_kill
 
 execute as @e[type=interaction,tag=hns_trash] on passengers on passengers run data modify entity @s text set value '[{"text": "∎∎∎∎∎∎∎∎∎∎","color": "yellow"},{"text": "","color": "red"}]'
-execute as @e[type=interaction,tag=hns_trash] on passengers run data modify entity @s item set value {id:"firework_star",components:{custom_model_data:1}}
+execute as @e[type=interaction,tag=hns_trash] on passengers run data modify entity @s item set value {id:"firework_star",components:{custom_model_data:32001,firework_explosion:{shape:"small_ball",colors:[I;1671965]}}}
 scoreboard players set @e[type=interaction,tag=hns_trash] hns_entity_health 10
 tag @e[type=interaction,tag=hns_trash] remove trash_dead
 
