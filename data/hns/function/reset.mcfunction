@@ -14,4 +14,4 @@ function hns:edit/remove_all_stickers
 
 tellraw @a [{"text":"> 游戏已重置"}]
 
-#tp
+tp @a -60 -7 134

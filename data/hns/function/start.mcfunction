@@ -3,7 +3,7 @@ tag @a remove bug_dead
 scoreboard players set #game_status hns 1
 scoreboard players add #game_round hns 1
 scoreboard players add @s hns_round 1
-scoreboard players set #disinfect_cd hns -60
+scoreboard players set #disinfect_cd hns -0
 
 execute as @a[team=bug] run function hns:player/init_item_bug
 execute as @a[team=sweeper] run function hns:player/init_item_sweeper
@@ -28,4 +28,5 @@ function hns:edit/remove_all_stickers
 title @a title [{"text":"躲藏阶段","color": "gray"},{"text":" 开始！","color": "white"}]
 execute as @a at @s run playsound item.goat_horn.sound.2 player @s ~ ~ ~ 1 1
 
-#tp
+tp @a[team=bug] -60 -7 134
+tp @a[team=sweeper] -60 -8 140

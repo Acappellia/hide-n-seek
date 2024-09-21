@@ -4,6 +4,4 @@ tag @s remove bug_dead
 team join spec
 clear @s
 
-#tp
-
-#todo handle dead bug 
+tp @s -60 -7 134
