@@ -12,4 +12,4 @@ execute store result storage hns:tmp time_info.sec int 1 run scoreboard players 
 
 function hns:game/update_time with storage hns:tmp time_info
 
-execute if score #game_time_s2 hns matches ..0 run function hns:game/win_bug
+execute if score #enable_timer hns matches 1 if score #game_time_s2 hns matches ..0 run function hns:game/win_bug

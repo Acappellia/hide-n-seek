@@ -12,7 +12,7 @@ execute as @a[scores={hns_summon=1..}] at @s run function hns:bug_skill/summon_t
 #execute as @a[scores={hns_sticker_use=1..}] at @s run function hns:sweeper_skill/summon_sticker/summon
 execute as @a[scores={hns_sticker_time=1..}] run attribute @s generic.jump_strength modifier remove sticker
 execute as @e[type=zombie,tag=hns_robot] at @s run function hns:sweeper_skill/robot_tick
-
+execute as @a[scores={hns_atk_cd=-5}] if items entity @s weapon.mainhand carrot_on_a_stick run item modify entity @s weapon.mainhand {function:"set_custom_model_data",value:1}
 
 execute as @a[team=bug] run function hns:bug_skill/tick
 
