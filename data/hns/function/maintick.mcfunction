@@ -13,8 +13,8 @@ execute as @a[scores={hns_summon=1..}] at @s run function hns:bug_skill/summon_t
 execute as @a[scores={hns_sticker_time=1..}] run attribute @s generic.jump_strength modifier remove sticker
 execute as @e[type=zombie,tag=hns_robot] at @s run function hns:sweeper_skill/robot_tick
 
-execute as @a[team=bug] if predicate hns:is_sneaking at @s run function hns:bug_skill/sneak/check_eat
-execute as @a[team=bug] unless predicate hns:is_sneaking run effect clear @s levitation
+
+execute as @a[team=bug] run function hns:bug_skill/tick
 
 execute unless score #game_status hns matches 0 unless score @s hns_round = #game_round hns run function hns:player/rejoin
 
@@ -29,7 +29,7 @@ execute as @a[team=bug] run item replace entity @s armor.head with warped_button
 {amount:-0.7,id:"bug_step",type:"generic.step_height",operation:"add_multiplied_base",slot:"head"},\
 {amount:-0.5,id:"bug_gravity",type:"generic.gravity",operation:"add_multiplied_base",slot:"head"},\
 {amount:-0.3,id:"bug_jump",type:"generic.jump_strength",operation:"add_multiplied_base",slot:"head"},\
-{amount:-0.7,id:"bug_interact_entity",type:"player.entity_interaction_range",operation:"add_multiplied_base",slot:"head"},\
+{amount:-1,id:"bug_interact_entity",type:"player.entity_interaction_range",operation:"add_multiplied_base",slot:"head"},\
 {amount:-1,id:"bug_interact_block",type:"player.block_interaction_range",operation:"add_multiplied_base",slot:"head"},\
 ],hide_tooltip={},enchantments={binding_curse:1}]
 execute as @a[team=sweeper] run item replace entity @s armor.head with warped_button[attribute_modifiers=[\

@@ -4,7 +4,7 @@
             "trigger": "using_item",
             "conditions": {
                 "item": {
-                    "items": "ender_eye"
+                    "items": "golden_apple"
                 },
                 "player": {
                     "team": "sweeper"
