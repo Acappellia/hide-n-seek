@@ -79,7 +79,7 @@ bossbar set hiding_cd style progress
 
 bossbar add game_cd [{"text": "剩余时间","color": "white"},{"text": " - ","color": "gray"},{"text": "60","color": "white"},{"text": ":","color": "gray"},{"text": "00","color": "white"}]
 bossbar set game_cd color yellow
-bossbar set game_cd max 600
+bossbar set game_cd max 1200
 bossbar set game_cd style progress
 #bossbar set game_cd visible false
 

@@ -3,7 +3,7 @@ tag @a remove bug_dead
 scoreboard players set #game_status hns 1
 scoreboard players add #game_round hns 1
 scoreboard players add @s hns_round 1
-scoreboard players set #disinfect_cd hns -0
+scoreboard players set #disinfect_cd hns -60
 
 execute as @a[team=bug] run function hns:player/init_item_bug
 execute as @a[team=sweeper] run function hns:player/init_item_sweeper
