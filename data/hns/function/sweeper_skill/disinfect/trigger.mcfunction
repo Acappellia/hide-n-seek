@@ -24,3 +24,4 @@ execute if score #disinfect_cd hns matches 4 run title @a[team=bug,predicate=hns
 execute if score #disinfect_cd hns matches 4 run title @a title [{"text": "准备区","color": "gold"},{"text": " 即将进行高温消杀","color": "white"}]
 
 schedule function hns:sweeper_skill/disinfect/ready_1 40t replace
+scoreboard players set #disinfect_cd hns -300
