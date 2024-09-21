@@ -24,6 +24,9 @@ scoreboard players set #game_time_s1 hns 600
 
 function hns:edit/reset_all_trash_and_food
 function hns:edit/remove_all_stickers
+function hns:edit/kill_all_robot
+execute positioned -50 -4 31 run function hns:edit/summon_robot
+execute positioned -60 -2 84 run function hns:edit/summon_robot
 
 title @a title [{"text":"躲藏阶段","color": "gray"},{"text":" 开始！","color": "white"}]
 execute as @a at @s run playsound item.goat_horn.sound.2 player @s ~ ~ ~ 1 1
