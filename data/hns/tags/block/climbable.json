@@ -1,5 +1,14 @@
 {
     "values": [
-        "#planks"
+        "quartz_pillar",
+        "smooth_quartz",
+        "stripped_spruce_wood",
+        "gray_concrete",
+        "barrel",
+        "beehive",
+        "bookshelf",
+        "chiseled_bookshelf",
+        "red_wool",
+        "black_wool"
     ]
 }

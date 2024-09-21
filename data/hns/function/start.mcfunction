@@ -14,7 +14,7 @@ effect give @a instant_health 1 9 true
 effect give @a[team=sweeper] resistance infinite 9 true
 effect give @a[team=bug] resistance 10 9 true
 scoreboard players set @a hns_firework_cd -200
-scoreboard players set @a hns_pesticide_cd -400
+scoreboard players set @a hns_pesticide_cd -100
 
 bossbar set game_cd visible false
 bossbar set hiding_cd players @a

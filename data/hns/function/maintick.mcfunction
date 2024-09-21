@@ -32,9 +32,9 @@ execute as @a[team=bug] run item replace entity @s armor.head with heart_of_the_
 {amount:-1,id:"bug_interact_entity",type:"player.entity_interaction_range",operation:"add_multiplied_base",slot:"head"},\
 {amount:-1,id:"bug_interact_block",type:"player.block_interaction_range",operation:"add_multiplied_base",slot:"head"},\
 ],hide_tooltip={},enchantments={binding_curse:1},custom_model_data=5015,enchantment_glint_override=false]
-execute as @a[team=sweeper] run item replace entity @s armor.head with warped_button[attribute_modifiers=[\
+execute as @a[team=sweeper] run item replace entity @s armor.head with heart_of_the_sea[attribute_modifiers=[\
 {amount:1,id:"sweeper_scale",type:"generic.knockback_resistance",operation:"add_value",slot:"head"},\
-],hide_tooltip={},enchantments={binding_curse:1},enchantment_glint_override=false]
+],hide_tooltip={},enchantments={binding_curse:1},custom_model_data=5015,enchantment_glint_override=false]
 execute as @a[team=spec] run item replace entity @s armor.head with air
 
 execute as @a[team=bug] run item replace entity @s armor.chest with elytra[unbreakable={},enchantments={binding_curse:1},hide_tooltip={},enchantment_glint_override=false]

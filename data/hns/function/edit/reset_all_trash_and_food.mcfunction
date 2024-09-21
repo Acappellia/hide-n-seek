@@ -9,6 +9,6 @@ execute as @e[type=interaction,tag=hns_food] on passengers on passengers run dat
 execute as @e[type=interaction,tag=hns_food] on passengers run data modify entity @s item set value {id:"firework_star",components:{custom_model_data:2}}
 execute as @e[type=interaction,tag=hns_food] on passengers store result entity @s item.components."minecraft:custom_model_data" int 1 on vehicle run scoreboard players get @s hns_food_type
 
-scoreboard players set @e[type=interaction,tag=hns_food_basket] hns_entity_health 200
-scoreboard players set @e[type=interaction,tag=hns_food_dish] hns_entity_health 100
+scoreboard players set @e[type=interaction,tag=hns_food_basket] hns_entity_health 400
+scoreboard players set @e[type=interaction,tag=hns_food_dish] hns_entity_health 200
 tag @e[type=interaction,tag=hns_food] remove food_dead

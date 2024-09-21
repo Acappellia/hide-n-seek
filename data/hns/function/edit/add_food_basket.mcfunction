@@ -4,5 +4,5 @@ execute store result score @n[type=interaction,tag=new,distance=..10] hns_food_t
 
 execute as @n[type=interaction,tag=new,distance=..10] on passengers store result entity @s item.components."minecraft:custom_model_data" int 1 on vehicle run scoreboard players get @s hns_food_type
 
-scoreboard players set @n[type=interaction,tag=new,distance=..10] hns_entity_health 200
+scoreboard players set @n[type=interaction,tag=new,distance=..10] hns_entity_health 400
 tag @n[type=interaction,tag=new,distance=..10] remove new
