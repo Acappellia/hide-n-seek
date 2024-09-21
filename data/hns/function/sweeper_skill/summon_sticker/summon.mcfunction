@@ -1,4 +1,4 @@
-advancement revoke @s only hns:using_golden_apple
+advancement revoke @s only hns:using_sticker
 
 execute if score @s hns_sticker_usecd matches ..-1 run return -1
 scoreboard players set @s hns_sticker_usecd -20
