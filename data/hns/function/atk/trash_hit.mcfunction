@@ -2,7 +2,6 @@ execute if score @s hns_entity_health matches ..0 run return -1
 playsound item.brush.brushing.gravel.complete block @a ~ ~ ~ 1 1
 
 scoreboard players remove @s hns_entity_health 1
-execute if entity @s[tag=hns_trash_tmp] run scoreboard players remove @s hns_entity_health 3
 execute on passengers run function hns:shake/1
 
 execute if score @s hns_entity_health matches 9 on passengers on passengers run data modify entity @s text set value '[{"text": "∎∎∎∎∎∎∎∎∎","color": "yellow"},{"text": "∎","color": "red"}]'
