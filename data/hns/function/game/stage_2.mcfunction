@@ -3,6 +3,7 @@ scoreboard players set #game_status hns 2
 bossbar set hiding_cd visible false
 bossbar set game_cd players @a
 bossbar set game_cd value 1200
+bossbar set game_cd name [{"text": "剩余时间","color": "white"}]
 bossbar set game_cd visible true
 scoreboard players set #game_time_s2 hns 1200
 
